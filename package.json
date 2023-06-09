@@ -1,7 +1,7 @@
 {
   "name": "class4-jiali",
   "version": "1.0.0",
-  "description": "博爱学校4班同学照——by 佳丽",
+  "description": "New York City shrouded in smoke",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
