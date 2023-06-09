@@ -73,45 +73,6 @@ const Home = () => {
     particlesAmountCoefficient: 4,
     oscillationCoefficient: 2
   }
-
-  return (
-    <>
-      <Container id="start" className="container intro">
-        <Title level={1}>4班同学照片墙</Title>
-        <Text inherit>我们的4班.</Text>
-        <Container className="actions">
-          <Spacing right={2}>
-            <Button
-              onPress={goUploadPage}
-              className="mt-4 mb-6"
-              primary
-              large
-            >
-              上传我们的照片
-              </Button>
-          </Spacing>
-          <Spacing left={2}>
-            <ParticleEffectButton
-              hidden={ButtonState.hidden}
-              color='#fa709a'
-              duration="500"
-              onComplete={onAnimationComplete}
-              {...buttonOptions}
-            >
-              <button
-                className="particle-effect-button mt-4 mb-6
-                button button__default button__large button__primary button__comment"
-                onClick={onCommentClick}
-              >
-                去留言吧
-              </button>
-            </ParticleEffectButton>
-          </Spacing>
-        </Container>
-      </Container>
-      <PhotoGrid onPhotoPress={onPhotoPress} photos={photos} />
-    </>
-  );
 };
 
 export default Home;
